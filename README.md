@@ -5,7 +5,6 @@
  - [Background](#Background)
  - [How to install](#how-to-install) 
  - [How to use](#how-to-use) 
- - [How it work](#how-it-work)
  
 ## Background
 <p align="justify"> My application is an educational application about cyber security. The inspiration to make this application was due to the cybersecurity problem in my country, "Thailand." The problem has greatly increased in the past as more people have access to technology. Every day on the Internet, I hear news about cyberattacks; for example, money in bank accounts is stolen due to downloading pirated applications from websites that display propaganda and are attacked by malware. According to the cyberattack statistics in my country, the elderly are the number one most attacked group. Moreover, today's youth have access to technology differently than in the past, and it is rare for schools to teach cyberattack defense. Therefore, I created this application to educate the target group of teenagers and senior citizens. However, apart from the above two groups, other groups can also use this application to increase their knowledge of cyber defense. It is advantageous to be familiar with cybersecurity.  </p>
@@ -17,6 +16,5 @@
 ## How to install
 
 ## How to use
-<img width="346" alt="1" src="https://github.com/patinya2001/Swift-Student-Challenge-2023/assets/149204731/8b9e2085-70dd-415b-bdd3-8b3db597c69b">
+<img width="200" alt="1" src="https://github.com/patinya2001/Swift-Student-Challenge-2023/assets/149204731/8b9e2085-70dd-415b-bdd3-8b3db597c69b">
 
-## How it work
