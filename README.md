@@ -17,5 +17,6 @@
 ## How to install
 
 ## How to use
+<img width="346" alt="1" src="https://github.com/patinya2001/Swift-Student-Challenge-2023/assets/149204731/8b9e2085-70dd-415b-bdd3-8b3db597c69b">
 
 ## How it work
