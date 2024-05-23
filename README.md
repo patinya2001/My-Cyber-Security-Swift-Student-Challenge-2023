@@ -1,7 +1,6 @@
 # Cyber Security (Swift Student Challenge 2023)
 
 ## Table of contents
-
  - [Background](#Background)
  - [How to install](#how-to-install) 
  - [How to use](#how-to-use) 
@@ -14,6 +13,12 @@
 <p align="justify"> I use SwiftUI to do the interface. I try to make it look as friendly as possible to my target audience. I've also used text-to-speech techniques, including AVSpeechUtterance() and AVSpeechSynthesizer() from AVFoundation. You will be able to hear a voice when you open the application or when you navigate through the pages within the application. What I do is for the elderly target group, allowing them to listen to the audio instead of reading, reducing the burden of reading such as blurry vision, eyestrain, etc. </p>
 
 ## How to install
+<p align="justify"> This project was developed through Swift Playground (.swiftpm) due to Apple requirements. </p>
+
+1. Clone this project or download it as a ZIP file.  
+2. In the project folder, open MyCyberSecurity.swiftpm via XCode.  
+3. Run the application.  
+4. Enjoy!
 
 ## How to use
 <img width="200" alt="1" src="https://github.com/patinya2001/Swift-Student-Challenge-2023/assets/149204731/8b9e2085-70dd-415b-bdd3-8b3db597c69b">
