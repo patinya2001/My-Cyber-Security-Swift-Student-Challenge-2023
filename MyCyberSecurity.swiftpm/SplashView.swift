@@ -10,14 +10,7 @@ import AVFoundation
 
 struct SplashView: View {
     @State private var isActive = false
-    let speaker = AVSpeechSynthesizer()
-    
-    func getSpeech(text: String) {
-        let context = AVSpeechUtterance(string: text)
-        context.voice = AVSpeechSynthesisVoice(language: "en-US")
-        context.rate = 0.5
-        speaker.speak(context)
-    }
+    let speaker = Speaker()
     
     var body: some View {
         if isActive {
@@ -44,7 +37,7 @@ struct SplashView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
                         self.isActive = true
                     }
-                    getSpeech(text: "Cyber Security Challenge. Are you ready?")
+                    speaker.getSpeech(text: "Cyber Security Challenge. Are you ready?")
                 } // Close onAppear
             } // Close ZStack
             .edgesIgnoringSafeArea(.all)

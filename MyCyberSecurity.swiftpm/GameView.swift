@@ -23,14 +23,8 @@ struct GameView: View {
     @State private var answerDescription2: String = ""
     @State private var choice1: String = ""
     @State private var choice2: String = ""
-    let speaker = AVSpeechSynthesizer()
     
-    func getSpeech(text: String) {
-        let context = AVSpeechUtterance(string: text)
-        context.voice = AVSpeechSynthesisVoice(language: "en-US")
-        context.rate = 0.5
-        speaker.speak(context)
-    }
+    let speaker = Speaker()
     
     var body: some View {
         ZStack { // Open ZStack
@@ -40,7 +34,7 @@ struct GameView: View {
                     Text(title)
                         .font(.custom("Futura", size: 24))
                     Button(action : { // Open Button
-                        getSpeech(text: fullText)
+                        speaker.getSpeech(text: fullText)
                     }) {
                         Image(systemName: "speaker.wave.3.fill")
                     } // Close Button
@@ -127,7 +121,7 @@ struct GameView: View {
                     self.choice2 = "Log in"
                     self.fullText = "\(title) " + "\(description) " + "\(choice1) " + "or " + "\(choice2)"
                 }
-                getSpeech(text: fullText)
+                speaker.getSpeech(text: fullText)
             }
         } // Close ZStack
         .edgesIgnoringSafeArea(.bottom)

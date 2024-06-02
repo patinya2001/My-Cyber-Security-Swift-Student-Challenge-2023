@@ -3,14 +3,7 @@ import AVFoundation
 
 struct HomeView: View {
     @State private var path: [Int] = []
-    let speaker = AVSpeechSynthesizer()
-    
-    func getSpeech(text: String) {
-        let context = AVSpeechUtterance(string: text)
-        context.voice = AVSpeechSynthesisVoice(language: "en-US")
-        context.rate = 0.5
-        speaker.speak(context)
-    }
+    let speaker = Speaker()
     
     var body: some View {
         if #available(iOS 16.0, *) {
@@ -58,7 +51,7 @@ struct HomeView: View {
                         } // Close NavigationLink
                     } // Close VStack1
                     .onAppear {
-                        getSpeech(text: "Welcome to Cyber Security Challenge! I have 3 questions about cyber security. \n Try to answer them!")
+                        speaker.getSpeech(text: "Welcome to Cyber Security Challenge! I have 3 questions about cyber security. \n Try to answer them!")
                     }
                 } // Close ZStack
                 .navigationBarTitleDisplayMode(.inline)

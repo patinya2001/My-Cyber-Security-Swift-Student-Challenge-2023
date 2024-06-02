@@ -11,14 +11,7 @@ import AVFoundation
 struct TopicListView: View {
     var systemImageName: String
     var topic: String
-    let speaker = AVSpeechSynthesizer()
-    
-    func getSpeech(text: String) {
-        let context = AVSpeechUtterance(string: text)
-        context.voice = AVSpeechSynthesisVoice(language: "en-US")
-        context.rate = 0.5
-        speaker.speak(context)
-    }
+    let speaker = Speaker()
     
     var body: some View {
         HStack { // Open HStack
@@ -29,7 +22,7 @@ struct TopicListView: View {
                 .font(.custom("Futura", size: 24))
             Spacer()
             Button(action : { // Open Button
-                getSpeech(text: topic)
+                speaker.getSpeech(text: topic)
             }) {
                 Image(systemName: "speaker.wave.3.fill")
             } // Close Button

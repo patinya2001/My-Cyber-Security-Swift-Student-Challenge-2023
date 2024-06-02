@@ -11,14 +11,7 @@ import AVFoundation
 struct GuideListView: View {
     var title: String
     var description: String
-    let speaker = AVSpeechSynthesizer()
-    
-    func getSpeech(text: String) {
-        let context = AVSpeechUtterance(string: text)
-        context.voice = AVSpeechSynthesisVoice(language: "en-US")
-        context.rate = 0.4
-        speaker.speak(context)
-    }
+    let speaker = Speaker()
     
     var body: some View {
         ZStack { // Open ZStack
@@ -31,7 +24,7 @@ struct GuideListView: View {
                         .padding(.leading, 20)
                     Spacer()
                     Button(action : { // Open Button
-                        getSpeech(text: "\(title) " + " \(description)")
+                        speaker.getSpeech(text: "\(title) " + " \(description)")
                     }) {
                         Image(systemName: "speaker.wave.3.fill")
                     } // Close Button
