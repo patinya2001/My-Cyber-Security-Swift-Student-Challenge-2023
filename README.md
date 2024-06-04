@@ -5,7 +5,7 @@
  - [Background](#Background)
  - [How to install](#how-to-install) 
  - [How to use](#how-to-use)
- - [What makes Fred talk?](#what-makes-fred-talk?)
+ - [What makes Fred talk?](#what-makes-fred-talk)
  - [Note](#Note)
  
 ## Background
