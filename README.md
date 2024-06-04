@@ -30,15 +30,21 @@ Our synthetic voice "Fred" will greet you on the splash screen when the applicat
 
 <img width="334" alt="1" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/162f15b9-9dd0-48d5-b28d-e6013e551f98">
 
+<br><br>
+
 Fred will provide an overview of the application. In summary, we have three cyber security questions for you to challenge.
 
 You can tap the speaker symbol to have Fred talk about that topic.
 
 <img width="337" alt="2" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/e4d58d63-bc0a-4547-b5ad-0ccf24ed44c6">
 
+<br><br>
+
 Every question gauges knowledge of cybersecurity. Therefore, you must select the appropriate option.
 
 <img width="331" alt="3" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/fe23bb3b-7f93-4aa3-bf4b-cdf047cc9cb3">
+
+<br><br>
 
 If you read the answers carefully, it doesn't matter if your answer is correct or incorrect. You will, at least, be immune to these things.
 
@@ -46,6 +52,8 @@ If you read the answers carefully, it doesn't matter if your answer is correct o
 <img width="334" alt="4" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/ddcd8269-7193-4989-bf01-b2fd5e60622d">
 <img width="334" alt="5" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/65a10a3d-b55c-4997-b9f9-90f27d5f3332">
 </p>
+
+<br><br>
 
 Thank you for your interest.
 
@@ -57,7 +65,7 @@ Hopefully this application will make you more or less aware of cyber security.
 
 Answer: AVFoundation
 
-AVFoundation is the full featured framework for working with time-based audiovisual media [Source](https://developer.apple.com/av-foundation/)
+AVFoundation is the full featured framework for working with time-based audiovisual media. [Source](https://developer.apple.com/av-foundation/)
 
 ```swift
 import AVFoundation
