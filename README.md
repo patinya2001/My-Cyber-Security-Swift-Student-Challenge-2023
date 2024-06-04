@@ -5,6 +5,7 @@
  - [Background](#Background)
  - [How to install](#how-to-install) 
  - [How to use](#how-to-use)
+ - [What makes Fred talk?](#what-makes-fred-talk?)
  - [Note](#Note)
  
 ## Background
@@ -25,18 +26,54 @@ This project was developed through Swift Playground (.swiftpm) due to Apple requ
 
 ## How to use
 
+Our synthetic voice "Fred" will greet you on the splash screen when the application launches.
+
 <img width="334" alt="1" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/162f15b9-9dd0-48d5-b28d-e6013e551f98">
+
+Fred will provide an overview of the application. In summary, we have three cyber security questions for you to challenge.
+
+You can tap the speaker symbol to have Fred talk about that topic.
 
 <img width="337" alt="2" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/e4d58d63-bc0a-4547-b5ad-0ccf24ed44c6">
 
+Every question gauges knowledge of cybersecurity. Therefore, you must select the appropriate option.
+
 <img width="331" alt="3" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/fe23bb3b-7f93-4aa3-bf4b-cdf047cc9cb3">
+
+If you read the answers carefully, it doesn't matter if your answer is correct or incorrect. You will, at least, be immune to these things.
 
 <p>
 <img width="334" alt="4" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/ddcd8269-7193-4989-bf01-b2fd5e60622d">
 <img width="334" alt="5" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/65a10a3d-b55c-4997-b9f9-90f27d5f3332">
 </p>
 
+Thank you for your interest.
+
+Hopefully this application will make you more or less aware of cyber security.
+
 <img width="333" alt="6" src="https://github.com/patinya2001/Cyber-Security-Swift-Student-Challenge-2023/assets/149204731/77849140-8c5f-4e53-88b1-be5dcf5094d8">
+
+## What makes Fred talk?
+
+Answer: AVFoundation
+
+AVFoundation is the full featured framework for working with time-based audiovisual media [Source](https://developer.apple.com/av-foundation/)
+
+```swift
+import AVFoundation
+
+struct Speaker {
+    let speaker = AVSpeechSynthesizer()
+    
+    func getSpeech(text: String) {
+        let context = AVSpeechUtterance(string: text)
+        context.voice = AVSpeechSynthesisVoice(identifier: "com.apple.speech.synthesis.voice.Fred")
+        context.rate = 0.55
+        speaker.speak(context)
+    }
+}
+```
+
 
 ## Note
 
