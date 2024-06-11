@@ -1,4 +1,4 @@
-# Cyber Security (Swift Student Challenge 2023)
+# My Cyber Security (Swift Student Challenge 2023)
 
 ## Table of contents
 
